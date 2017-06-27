@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Equity - Basket of Love</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="css/styles.css" />
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript" src="js/mediaelement-and-player.min.js"></script>
+</head>
+
+<body>
+
+<!-- mobile_nav_wrapper -->
+<div id="mobile_nav_wrapper">
+  <div class="mobile-nav-content">
+    <div class="logo-wrapper">      	
+      <a href="index.html" class="logo">
+        <img src="images/lockup-sm.png" alt="Equity Bank" />
+      </a>
+      <a href="#" class="menu-close flaticon-close"></a>
+    </div>
+
+    <ul>
+    	<li>
+        <a href="home.html#home">Home</a>
+      </li>
+      <li>
+        <a href="home.html#how-to">How to</a>
+      </li>
+      <li>
+        <a href="gallery.html" class="active">Gallery</a>
+      </li>
+      <li>
+        <a href="leaderboard.html">Leaderboard</a>
+      </li>
+      <li>
+        <a href="index.html">Watch Video</a>
+      </li>     
+      <li>
+        <a href="home.html#services">Equity Diaspora Services</a>
+      </li>      
+    </ul>
+   	<div class="btns-wrapper">
+    	<a href="#" class="signup">Sign up</a>
+      <a href="#" class="login">Login</a>
+    </div>
+   	<div class="social">
+    	<a href="#" class="flaticon-google-plus"></a>
+    	<a href="#" class="flaticon-facebook"></a>
+    	<a href="#" class="flaticon-twitter"></a>
+    </div>
+    <div class="footer">
+    	<a href="#">Privacy Policy</a><br/><a href="#">Disclaimer</a><br/><a href="#">Terms &amp; Conditions</a>
+      <br/>
+      <div class="copyright">&copy; 2016. All Rights Reserved.<br/>Equity Bank Limited.</div>
+    </div>
+  </div>
+</div>
+<!-- mobile_nav_wrapper end -->
+
+<!-- header -->
+<div id="header" class="clearfloat">
+	<a href="index.html" class="logo">
+  	<img src="images/logo.png" width="107" height="56" alt="Logo" />
+  </a>
+  <div class="menu-container">
+  	<a href="#" class="signup">Sign up</a>
+  	<a href="#" class="login">Login</a>
+  	<div class="social">
+    	<a href="#" class="flaticon-google-plus"></a>
+    	<a href="#" class="flaticon-facebook"></a>
+    	<a href="#" class="flaticon-twitter"></a>
+    </div>
+  	<div class="btn-menu">
+    	<span></span>
+    </div>
+  </div>
+</div>
+<div id="lockup">
+  <img src="images/lockup.png" alt="Basket of Love" />
+</div>
+<!-- header end -->
+
+
+<!-- video-container -->
+<div class="video-container">
+  <div class="col video-col">
+  	<video width="100%" height="360" id="player" controls preload="none">
+      <!-- MP4 source must come first for iOS -->
+      <source type="video/mp4" src="media/echo-hereweare.mp4" />
+      <!-- Fallback flash player for no-HTML5 browsers with JavaScript turned off -->
+      <object width="100%" height="360" type="application/x-shockwave-flash" data="js/flashmediaelement.swf"> 		
+        <param name="movie" value="js/flashmediaelement.swf" /> 
+        <param name="flashvars" value="controls=true&amp;file=media/echo-hereweare.mp4" /> 		
+        <!-- Image fall back for non-HTML5 browser with JavaScript turned off and no Flash player installed -->
+        <img src="media/no_support.png" width="640" height="360" alt="" 
+          title="No video playback capabilities" />
+      </object> 	
+    </video>	
+  </div>
+  <div class="col desc-col">
+  	<span class="vid-name">Missing Home</span>
+    <span class="username">by Lucia Akaki Marwah</span>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.</p>
+    <div class="meta-wrapper">
+      <a href="#" class="meta" title="Vote"><i class="flaticon-vote"></i>23 Votes</a>
+      <span class="meta"><i class="flaticon-views"></i>104K Views</span>
+    </div>
+  </div>
+</div>
+<!-- video-container end -->
+
+<!-- clouds -->
+<div class="clouds"></div>
+<!-- clouds end -->
+
+<!-- content_mask -->
+<div id="content_mask"></div>
+<!-- content_mask end -->
+
+<!-- preloader -->
+<div class="preloader">
+  <div class="spinner">
+  	<span class="logo floating"><img src="images/lockup-sm.png" alt="Basket of Love" /></span>
+    <div class="bounce1"></div>
+    <div class="bounce2"></div>
+    <div class="bounce3"></div>
+  </div>
+</div>
+<!-- preloader end -->
+
+<script type="text/javascript" src="js/common.js"></script>
+<script>
+
+$('audio,video').mediaelementplayer({
+	//mode: 'shim',
+	success: function(player, node) {
+		$('#' + node.id + '-mode').html('mode: ' + player.pluginType);
+	}
+});
+
+</script>
+</body>
+</html>

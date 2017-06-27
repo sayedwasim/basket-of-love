@@ -1,0 +1,215 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Equity - Basket of Love</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="css/styles.css" />
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript" src="js/mediaelement-and-player.min.js"></script>
+</head>
+
+<body>
+
+<!-- mobile_nav_wrapper -->
+<div id="mobile_nav_wrapper">
+  <div class="mobile-nav-content">
+    <div class="logo-wrapper">      	
+      <a href="index.html" class="logo">
+        <img src="images/lockup-sm.png" alt="Equity Bank" />
+      </a>
+      <a href="#" class="menu-close flaticon-close"></a>
+    </div>
+
+    <ul>
+    	<li>
+        <a href="home.html#home">Home</a>
+      </li>
+      <li>
+        <a href="home.html#how-to">How to</a>
+      </li>
+      <li>
+        <a href="gallery.html" class="active">Gallery</a>
+      </li>
+      <li>
+        <a href="leaderboard.html">Leaderboard</a>
+      </li>
+      <li>
+        <a href="index.html">Watch Video</a>
+      </li>     
+      <li>
+        <a href="home.html#services">Equity Diaspora Services</a>
+      </li>      
+    </ul>
+   	<div class="btns-wrapper">
+    	<a href="#" class="signup">Sign up</a>
+      <a href="#" class="login">Login</a>
+    </div>
+   	<div class="social">
+    	<a href="#" class="flaticon-google-plus"></a>
+    	<a href="#" class="flaticon-facebook"></a>
+    	<a href="#" class="flaticon-twitter"></a>
+    </div>
+    <div class="footer">
+    	<a href="#">Privacy Policy</a><br/><a href="#">Disclaimer</a><br/><a href="#">Terms &amp; Conditions</a>
+      <br/>
+      <div class="copyright">&copy; 2016. All Rights Reserved.<br/>Equity Bank Limited.</div>
+    </div>
+  </div>
+</div>
+<!-- mobile_nav_wrapper end -->
+
+<!-- header -->
+<div id="header" class="clearfloat">
+	<a href="index.html" class="logo">
+  	<img src="images/logo.png" width="107" height="56" alt="Logo" />
+  </a>
+  <div class="menu-container">
+  	<a href="#" class="signup">Sign up</a>
+  	<a href="#" class="login">Login</a>
+  	<div class="social">
+    	<a href="#" class="flaticon-google-plus"></a>
+    	<a href="#" class="flaticon-facebook"></a>
+    	<a href="#" class="flaticon-twitter"></a>
+    </div>
+  	<div class="btn-menu">
+    	<span></span>
+    </div>
+  </div>
+</div>
+<div id="lockup">
+  <img src="images/lockup.png" alt="Basket of Love" />
+</div>
+<!-- header end -->
+
+<!-- account-wrapper -->
+<div class="account-wrapper">
+  <!-- account-details -->
+  <div id="account_signup" class="article-container account-details">
+    <h1>Sign up</h1>
+    <form action="#" method="post" class="floating-labels">
+      <ul>
+        <li class="field">  
+          <label for="full_name">Full Name</label>      	
+          <input type="text" class="textbox input" id="full_name" name="full_name" maxlength="100" />         
+        </li>
+        <li class="field">  
+          <label for="signup_email">E-mail Address</label>      	
+          <input type="email" class="textbox input" id="signup_email" name="signup_email" maxlength="100" />         
+        </li>
+        <li class="field">  
+          <label for="signup_pwd">Password</label>      	
+          <input type="password" class="textbox input" id="signup_pwd" name="signup_pwd" maxlength="100" />         
+        </li>
+        <li class="field">  
+          <label for="signup_re_pwd">Retype Password</label>      	
+          <input type="password" class="textbox input" id="signup_re_pwd" name="signup_re_pwd" maxlength="100" />         
+        </li>
+        <li class="field">
+          By Signing up you accept Equity Bank's Terms of service.
+        </li>
+        <li class="field">
+          <button type="submit" class="btn"><span>Sign up</span></button>
+          <span class="no-account">Already have an Account? <a href="#account_login" class="acc-login">Login</a></span>
+        </li>
+      </ul>
+    </form>
+  </div>
+  
+  <div id="account_login" class="article-container account-details" style="display:none">
+    <h1>Login</h1>
+    <a href="#" class="btn-social btn-twitter"><span class="icon flaticon-twitter"></span>Login with Twitter</a>
+    <a href="#" class="btn-social btn-facebook"><span class="icon flaticon-facebook"></span>Login with Facebook</a>
+    <span class="or">Or</span>
+    <form action="#" method="post" class="floating-labels">
+      <ul>
+        <li class="field">  
+          <label for="user_login_email">E-mail Address</label>      	
+          <input type="email" class="textbox input" id="user_login_email" name="user_login_email" maxlength="100" />         
+        </li>
+        <li class="field">  
+          <label for="user_login_pwd">Password</label>      	
+          <input type="password" class="textbox input" id="user_login_pwd" name="user_login_pwd" maxlength="100" />         
+        </li>
+        <li class="forgot-password-field">
+          <a href="#account_reset_password" class="acc-reset">Forgot your Password?</a>
+        </li>
+        <li class="field">
+          <button type="submit" class="btn"><span>Login</span></button>
+          <span class="no-account">Don’t have an Account? <a href="#account_signup" class="acc-signup">Sign Up</a></span>
+        </li>
+      </ul>
+    </form>
+  </div>
+  
+  <div id="account_reset_password" class="article-container account-details" style="display:none">
+    <h1>Reset Password</h1>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.</p>
+    <form action="#" method="post" class="floating-labels">
+      <ul>
+        <li class="field">  
+          <label for="verify_email">E-mail Address</label>      	
+          <input type="email" class="textbox input" id="verify_email" name="verify_email" maxlength="100" />         
+        </li>
+        <li class="field">
+          <button type="submit" class="btn"><span>Send</span></button>
+        </li>
+      </ul>
+    </form>
+  </div>
+  <!-- account-details end -->
+</div>
+<!-- account-wrapper end -->
+
+<!-- footer -->
+<div id="footer">
+  <ul>
+    <li><a href="#">Privacy Policy</a></li>
+    <li><a href="#">Disclaimer</a></li>
+    <li><a href="#">Terms &amp; Conditions</a></li>
+    <li>&copy; 2016. All Rights Reserved. Equity Bank Limited</li>
+    <li>
+      <div class="social">
+        <a href="#" class="flaticon-google-plus"></a>
+        <a href="#" class="flaticon-facebook"></a>
+        <a href="#" class="flaticon-twitter"></a>
+      </div>
+    </li>
+  </ul>
+</div>
+<!-- footer end -->
+
+<!-- clouds -->
+<div class="clouds"></div>
+<!-- clouds end -->
+
+<!-- content_mask -->
+<div id="content_mask"></div>
+<!-- content_mask end -->
+
+<!-- preloader -->
+<div class="preloader">
+  <div class="spinner">
+  	<span class="logo floating"><img src="images/lockup-sm.png" alt="Basket of Love" /></span>
+    <div class="bounce1"></div>
+    <div class="bounce2"></div>
+    <div class="bounce3"></div>
+  </div>
+</div>
+<!-- preloader end -->
+
+<script type="text/javascript" src="js/common.js"></script>
+<script>
+
+$('audio,video').mediaelementplayer({
+	//mode: 'shim',
+	success: function(player, node) {
+		$('#' + node.id + '-mode').html('mode: ' + player.pluginType);
+	}
+});
+
+</script>
+</body>
+</html>
